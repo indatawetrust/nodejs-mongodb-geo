@@ -58,6 +58,18 @@ id | Y | driver id
 ###### Body Parameters
 None
 
+#### all drivers
+```
+GET /drivers
+```
+#### Parameters
+###### URI Parameters
+Field | Required | Description
+--- | --- | ---
+page | N | page number
+###### Body Parameters
+None
+
 #### drivers nearby
 ```
 POST /ride
