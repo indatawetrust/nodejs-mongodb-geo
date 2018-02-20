@@ -57,7 +57,19 @@ test('/drivers all tests', async t => {
       })
       .expect('Content-Type', /json/)
 
+  const drivers = await request(app)
+    .get('/drivers?page=2')
+    .expect('Content-Type', /json/)
+
     t.is(res.status, 200)
+
+  t.deepEqual({
+    status: res.status,
+    len: drivers.body.payload.length
+  },{
+    status: 200,
+    len: 8
+  })
 
 })
 
