@@ -6,7 +6,8 @@
     "node": "7.6.0"
   },
   "scripts": {
-    "start": "nodemon ./bin/www"
+    "start": "nodemon ./bin/www",
+    "test": "ava"
   },
   "dependencies": {
     "body-parser": "~1.17.1",
